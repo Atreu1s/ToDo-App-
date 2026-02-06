@@ -1,0 +1,33 @@
+packages/utils/
+├── src/
+│   ├── date/             # Работа с датами
+│   │   ├── formatDate.ts
+│   │   ├── formatTime.ts
+│   │   ├── addDays.ts
+│   │   └── index.ts
+│   │
+│   ├── string/           # Работа со строками
+│   │   ├── slugify.ts
+│   │   ├── truncate.ts
+│   │   └── index.ts
+│   │
+│   ├── number/           # Работа с числами
+│   │   ├── formatNumber.ts
+│   │   ├── round.ts
+│   │   └── index.ts
+│   │
+│   ├── array/            # Работа с массивами
+│   │   ├── chunk.ts
+│   │   ├── unique.ts
+│   │   └── index.ts
+│   │
+│   ├── storage/          # Работа с хранилищем
+│   │   ├── localStorage.ts
+│   │   ├── sessionStorage.ts
+│   │   └── index.ts
+│   │
+│   └── index.ts          # Главный экспорт
+│
+├── package.json
+├── tsconfig.json
+└── README.md

@@ -1,0 +1,72 @@
+apps/desktop/
+├── main/                 # Main Process (Node.js)
+│   ├── main.ts           # Точка входа
+│   ├── ipc/              # IPC-хендлеры
+│   │   ├── database.ts
+│   │   ├── files.ts
+│   │   ├── system.ts
+│   │   └── index.ts
+│   ├── preload/          # Preload скрипт
+│   │   └── index.ts
+│   ├── menu/             # Меню приложения
+│   │   └── index.ts
+│   ├── tray/             # Системный трей
+│   │   └── index.ts
+│   ├── updater/          # Автообновление
+│   │   └── index.ts
+│   └── utils/            # Вспомогательные утилиты
+│       └── index.ts
+│
+├── renderer/             # Renderer Process (React)
+│   ├── public/           # Статические файлы
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── electron.js
+│   │
+│   ├── src/              # Исходный код
+│   │   ├── components/   # UI-компоненты
+│   │   │   ├── common/
+│   │   │   ├── tasks/
+│   │   │   ├── schedules/
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── pages/        # Страницы приложения
+│   │   │   ├── Home.tsx
+│   │   │   ├── Tasks.tsx
+│   │   │   ├── Schedules.tsx
+│   │   │   ├── Calendar.tsx
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── hooks/        # Кастомные хуки
+│   │   │   ├── useTasks.ts
+│   │   │   ├── useSchedules.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── services/     # Сервисы
+│   │   │   ├── ipc.ts    # IPC-клиент
+│   │   │   ├── database.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── store/        # Состояние приложения
+│   │   │   ├── useTaskStore.ts
+│   │   │   ├── useScheduleStore.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── styles/       # Стили
+│   │   │   ├── global.scss
+│   │   │   ├── variables.scss
+│   │   │   └── mixins.scss
+│   │   │
+│   │   ├── App.tsx       # Корневой компонент
+│   │   ├── main.tsx      # Точка входа React
+│   │   └── vite-env.d.ts # Типы для Vite
+│   │
+│   ├── package.json      # Зависимости рендерера
+│   └── tsconfig.json     # Конфигурация TypeScript
+│
+├── forge.config.ts       # Конфигурация Electron Forge
+├── electron-builder.json # Конфигурация Electron Builder
+├── package.json          # Зависимости приложения
+├── tsconfig.json         # Конфигурация TypeScript
+├── vite.config.ts        # Конфигурация Vite
+└── README.md             # Документация

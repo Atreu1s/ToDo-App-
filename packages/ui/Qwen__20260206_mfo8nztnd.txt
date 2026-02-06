@@ -1,0 +1,41 @@
+packages/ui/
+├── src/
+│   ├── components/       # Переиспользуемые компоненты
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Button.styles.ts
+│   │   │   └── index.ts
+│   │   ├── Card/
+│   │   │   ├── Card.tsx
+│   │   │   ├── Card.styles.ts
+│   │   │   └── index.ts
+│   │   ├── Input/
+│   │   │   ├── Input.tsx
+│   │   │   ├── Input.styles.ts
+│   │   │   └── index.ts
+│   │   ├── Modal/
+│   │   │   ├── Modal.tsx
+│   │   │   ├── Modal.styles.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   │
+│   ├── theme/            # Темизация
+│   │   ├── colors.ts
+│   │   ├── typography.ts
+│   │   ├── spacing.ts
+│   │   └── index.ts
+│   │
+│   ├── hooks/            # Кастомные хуки
+│   │   ├── useClickOutside.ts
+│   │   ├── useDebounce.ts
+│   │   └── index.ts
+│   │
+│   ├── utils/            # Утилиты для компонентов
+│   │   ├── classNames.ts
+│   │   └── index.ts
+│   │
+│   └── index.ts          # Главный экспорт
+│
+├── package.json
+├── tsconfig.json
+└── README.md

@@ -1,0 +1,30 @@
+packages/database/
+├── src/
+│   ├── schema/           # Схема базы данных
+│   │   ├── schema.sql    # SQL-схема
+│   │   ├── migrations/   # Миграции
+│   │   │   ├── 001_initial.sql
+│   │   │   ├── 002_add_tags.sql
+│   │   │   └── index.ts
+│   │   └── seeds/        # Тестовые данные
+│   │       └── seed.ts
+│   │
+│   ├── stores/           # Реализации хранилищ
+│   │   ├── index.ts
+│   │   ├── baseStore.ts  # Базовый класс
+│   │   ├── nodeStore.ts  # Для Node.js (десктоп)
+│   │   └── rnStore.ts    # Для React Native (мобильные)
+│   │
+│   ├── repositories/     # Репозитории (паттерн)
+│   │   ├── TaskRepository.ts
+│   │   ├── UserRepository.ts
+│   │   ├── ScheduleRepository.ts
+│   │   └── index.ts
+│   │
+│   ├── migrations.ts     # Механизм миграций
+│   ├── seeds.ts          # Механизм сидов
+│   └── index.ts          # Главный экспорт
+│
+├── package.json
+├── tsconfig.json
+└── README.md

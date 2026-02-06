@@ -1,0 +1,5 @@
+.github/
+└── workflows/
+    ├── ci.yml            # CI/CD пайплайн (тесты, линтер)
+    ├── release.yml       # Автоматические релизы
+    └── deploy.yml        # Деплой на сервер

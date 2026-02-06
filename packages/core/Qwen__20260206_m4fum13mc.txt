@@ -1,0 +1,30 @@
+packages/core/
+├── src/
+│   ├── models/           # Модели данных
+│   │   ├── User.ts
+│   │   ├── Task.ts
+│   │   ├── Tag.ts
+│   │   ├── WorkSchedule.ts
+│   │   └── index.ts
+│   │
+│   ├── services/         # Сервисы (бизнес-логика)
+│   │   ├── TaskService.ts
+│   │   ├── ScheduleService.ts
+│   │   ├── UserService.ts
+│   │   └── index.ts
+│   │
+│   ├── validators/       # Валидаторы
+│   │   ├── taskValidator.ts
+│   │   ├── userValidator.ts
+│   │   └── index.ts
+│   │
+│   ├── constants/        # Константы
+│   │   ├── priorities.ts
+│   │   ├── statuses.ts
+│   │   └── index.ts
+│   │
+│   └── index.ts          # Главный экспорт
+│
+├── package.json          # Метаданные пакета
+├── tsconfig.json         # Конфиг TypeScript
+└── README.md             # Документация пакета

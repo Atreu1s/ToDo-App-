@@ -1,0 +1,63 @@
+apps/backend/
+├── src/
+│   ├── server.ts         # Точка входа сервера
+│   ├── app.ts            # Express приложение
+│   │
+│   ├── routes/           # Роуты API
+│   │   ├── auth.ts
+│   │   ├── tasks.ts
+│   │   ├── schedules.ts
+│   │   ├── users.ts
+│   │   └── index.ts
+│   │
+│   ├── controllers/      # Контроллеры
+│   │   ├── AuthController.ts
+│   │   ├── TaskController.ts
+│   │   ├── ScheduleController.ts
+│   │   └── UserController.ts
+│   │
+│   ├── services/         # Сервисы
+│   │   ├── AuthService.ts
+│   │   ├── TaskService.ts
+│   │   ├── ScheduleService.ts
+│   │   └── UserService.ts
+│   │
+│   ├── middleware/       # Промежуточное ПО
+│   │   ├── auth.ts       # Аутентификация
+│   │   ├── validation.ts # Валидация
+│   │   └── error.ts      # Обработка ошибок
+│   │
+│   ├── models/           # Модели базы данных
+│   │   ├── User.ts
+│   │   ├── Task.ts
+│   │   ├── Tag.ts
+│   │   └── Schedule.ts
+│   │
+│   ├── database/         # Конфигурация БД
+│   │   ├── connection.ts
+│   │   ├── migrations/   # Миграции
+│   │   └── seeds/        # Тестовые данные
+│   │
+│   ├── utils/            # Утилиты
+│   │   ├── jwt.ts        # JWT токены
+│   │   ├── hash.ts       # Хеширование паролей
+│   │   └── index.ts
+│   │
+│   ├── config/           # Конфигурация
+│   │   ├── database.ts
+│   │   ├── server.ts
+│   │   └── index.ts
+│   │
+│   └── index.ts          # Главный экспорт
+│
+├── tests/                # Тесты
+│   ├── unit/             # Модульные тесты
+│   ├── integration/      # Интеграционные тесты
+│   └── e2e/              # E2E тесты
+│
+├── .env.example          # Пример переменных окружения
+├── Dockerfile            # Docker-контейнер
+├── docker-compose.yml    # Docker Compose
+├── package.json
+├── tsconfig.json
+└── README.md

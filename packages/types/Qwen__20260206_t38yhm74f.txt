@@ -1,0 +1,27 @@
+packages/types/
+├── src/
+│   ├── models/           # Типы моделей
+│   │   ├── user.ts
+│   │   ├── task.ts
+│   │   ├── tag.ts
+│   │   └── index.ts
+│   │
+│   ├── api/              # Типы API
+│   │   ├── requests.ts
+│   │   ├── responses.ts
+│   │   └── index.ts
+│   │
+│   ├── enums/            # Перечисления
+│   │   ├── priorities.ts
+│   │   ├── statuses.ts
+│   │   └── index.ts
+│   │
+│   ├── utils/            # Утилитарные типы
+│   │   ├── helpers.ts
+│   │   └── index.ts
+│   │
+│   └── index.ts          # Главный экспорт
+│
+├── package.json
+├── tsconfig.json
+└── README.md

@@ -1,0 +1,22 @@
+tools/
+├── cli/                  # CLI-утилиты
+│   ├── src/
+│   │   ├── commands/     # Команды
+│   │   │   ├── generate.ts
+│   │   │   ├── migrate.ts
+│   │   │   └── seed.ts
+│   │   ├── utils/        # Утилиты
+│   │   └── index.ts
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── scripts/              # Вспомогательные скрипты
+│   ├── generate-models.ts    # Генерация моделей из схемы
+│   ├── generate-types.ts     # Генерация TypeScript-типов
+│   ├── update-version.ts     # Обновление версий
+│   └── deploy.sh             # Скрипт деплоя
+│
+└── templates/            # Шаблоны для генерации
+    ├── component.tsx.hbs
+    ├── service.ts.hbs
+    └── model.ts.hbs

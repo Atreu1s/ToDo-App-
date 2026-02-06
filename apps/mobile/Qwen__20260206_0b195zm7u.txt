@@ -1,0 +1,66 @@
+apps/mobile/
+├── app/                  # Экраны приложения (Expo Router)
+│   ├── (tabs)/           # Группа экранов с табами
+│   │   ├── index.tsx     # Главный экран
+│   │   ├── tasks.tsx     # Список задач
+│   │   ├── schedules.tsx # Графики
+│   │   ├── calendar.tsx  # Календарь
+│   │   └── _layout.tsx   # Навигация для этой группы
+│   │
+│   ├── tasks/            # Экраны задач
+│   │   ├── [id].tsx      # Детали задачи
+│   │   ├── create.tsx    # Создание задачи
+│   │   └── edit.tsx      # Редактирование задачи
+│   │
+│   ├── schedules/        # Экраны графиков
+│   │   ├── [id].tsx
+│   │   ├── create.tsx
+│   │   └── edit.tsx
+│   │
+│   ├── _layout.tsx       # Корневая навигация
+│   └── +not-found.tsx    # 404 страница
+│
+├── components/           # UI-компоненты
+│   ├── common/           # Общие компоненты
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   └── Input.tsx
+│   │
+│   ├── tasks/            # Компоненты для задач
+│   │   ├── TaskItem.tsx
+│   │   ├── TaskForm.tsx
+│   │   └── TaskList.tsx
+│   │
+│   ├── schedules/        # Компоненты для графиков
+│   │   ├── ScheduleItem.tsx
+│   │   └── ScheduleCalendar.tsx
+│   │
+│   └── index.ts          # Экспорт всех компонентов
+│
+├── hooks/                # Кастомные хуки
+│   ├── useTasks.ts
+│   ├── useSchedules.ts
+│   └── useDatabase.ts
+│
+├── services/             # Сервисы приложения
+│   ├── database.ts       # Интеграция с БД
+│   ├── notifications.ts  # Уведомления
+│   └── api.ts            # API-клиент
+│
+├── store/                # Состояние приложения
+│   ├── useTaskStore.ts
+│   ├── useScheduleStore.ts
+│   └── index.ts
+│
+├── assets/               # Ресурсы
+│   ├── images/           # Изображения
+│   ├── icons/            # Иконки
+│   └── fonts/            # Шрифты
+│
+├── app.json              # Конфигурация Expo
+├── app.config.ts         # Программная конфигурация
+├── babel.config.js       # Конфигурация Babel
+├── eas.json              # Конфигурация EAS Build
+├── package.json          # Зависимости приложения
+├── tsconfig.json         # Конфигурация TypeScript
+└── README.md             # Документация
